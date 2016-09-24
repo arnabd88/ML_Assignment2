@@ -128,21 +128,23 @@ def AggressivePerceptron( initEn, xdata, ydata, wsize, epochs, margin, enShuffle
 			for i in range(0,len(xdata)): ##looping over each of the examples
 				xvec = xdata[i]
 				ylabel = ydata[i]
+				wtxSum = bias
 				if(len(xvec) < len(wvec)):
 					looprange = len(xvec)
 				for i in range(0,looprange):
 					wtxSum = wtxSum + xvec[i]*wvec[i]
-				if(sgn(wtxSum, margin)*ylabel < 0): ##Incorrect prediction
+				if(ylabel*wtxSum <= margin):
+				#if(sgn(wtxSum, margin)*ylabel < 0): ##Incorrect prediction
 					mistakeCounter = mistakeCounter + 1
 					##--- Part of aggressive update to bias and weights ---
 					xtx = numpy.dot( numpy.array(xvec),  numpy.array(xvec).transpose())
-					eta = float( margin - ylabel*(wtxSum))/(xtx + 1)
-					print 'Margin = ', margin
-					print 'yalebl = ', ylabel
-					print 'wtxSum = ', wtxSum
-					print 'xvec = ',xvec
-					print 'XTX = ', xtx
-					print "Current Eta = ", eta, '\n\n'
+					eta = float( margin - ylabel*wtxSum)/(xtx + 1)
+					#print 'Margin = ', margin
+					#print 'yalebl = ', ylabel
+					#print 'wtxSum = ', wtxSum
+					#print 'xvec = ',xvec
+					#print 'XTX = ', xtx
+					#print "Current Eta = ", eta, '\n\n'
 					if(len(xvec) < len(wvec)):
 						xvec = extendList(xvec, len(wvec))
 					correction = map(lambda x: x*ylabel*eta, xvec)
@@ -152,6 +154,45 @@ def AggressivePerceptron( initEn, xdata, ydata, wsize, epochs, margin, enShuffle
 		return [bias, wvec, mistakeCounter]
 
 
+
+
+def Perceptron(lr, initEn, xdata, ydata, wsize, epochs, margin, enShuffle ):
+	wvec = []
+	bias = 0
+	mistakeCounter = 0
+	##---initialize---
+	if(initEn==0):
+		wvec = [0]*wsize
+		bias = 0
+	else:
+		##--- using a normal distribution of mean 0 and sd 0.1
+		wvec = numpy.random.normal(0, 0.01, wsize+1)
+		bias = wvec[0]
+		wvec = wvec[1:]
+	##-- Make the prediction (Evaluate wx+b) -- ##
+	for i in range(0,epochs):
+		wtxSum = bias
+		looprange = len(wvec)
+		if(enShuffle == 1):
+			[xdata, ydata] = permuteDataLabel(xdata, ydata)
+		for i in range(0,len(xdata)):  ## looping over each of the examples
+			xvec = xdata[i]
+			ylabel = ydata[i]
+			wtxSum = bias
+			if(len(xvec) < len(wvec)):
+				looprange = len(xvec)
+			for i in range(0,looprange):
+				wtxSum = wtxSum + xvec[i]*wvec[i]
+			if(ylabel*wtxSum <= margin):
+			#if(sgn(wtxSum, margin)*ylabel < 0): ## Incorrect prediction 
+				mistakeCounter = mistakeCounter + 1
+				## update the bias and weights
+				if(len(xvec) < len(wvec)):
+					xvec = extendList(xvec,len(wvec))
+				correction = map(lambda x: x*ylabel*lr, xvec)
+				wvec = map(sum, zip(wvec, correction))
+				bias = bias + lr*ylabel
+	return [bias, wvec, mistakeCounter]
 
 
 
@@ -178,6 +219,7 @@ def MarginPerceptron(lr, initEn, xdata, ydata, wsize, epochs, margin, enShuffle 
 		for i in range(0,len(xdata)):  ## looping over each of the examples
 			xvec = xdata[i]
 			ylabel = ydata[i]
+			wtxSum = bias
 			if(len(xvec) < len(wvec)):
 				looprange = len(xvec)
 			for i in range(0,looprange):
@@ -222,6 +264,7 @@ def SimplePerceptron(lr, initEn, xdata, ydata, wsize, epochs, enShuffle ):
 		for i in range(0,len(xdata)):  ## looping over each of the examples
 			xvec = xdata[i]
 			ylabel = ydata[i]
+			wtxSum = bias
 			if(len(xvec) < len(wvec)):
 				looprange = len(xvec)
 			for i in range(0,looprange):
@@ -238,6 +281,25 @@ def SimplePerceptron(lr, initEn, xdata, ydata, wsize, epochs, enShuffle ):
 
 ## Takes test data and makes predictions based on the 
 
+
+def TestPerceptron( xdata, ydata, wvec, bias, wsize, margin):
+	mistakeCounter = 0
+	wtxSum = bias
+	looprange = len(wvec)
+	for i in range(0,len(xdata)):
+		xvec   = xdata[i]
+		ylabel = ydata[i]
+		wtxSum = bias
+		if(len(xvec) < len(wvec)):
+			looprange = len(xvec)
+		for i in range(0,looprange):
+			wtxSum = wtxSum + xvec[i]*wvec[i]
+		if(ylabel*wtxSum <= margin):
+		#if(sgn(wtxSum, margin)*ylabel < 0):
+			mistakeCounter = mistakeCounter + 1
+	return mistakeCounter
+
+
 def TestSimplePerceptron(xdata, ydata, wvec, bias, wsize):
 	mistakeCounter = 0
 	wtxSum = bias
@@ -245,6 +307,7 @@ def TestSimplePerceptron(xdata, ydata, wvec, bias, wsize):
 	for i in range(0,len(xdata)):
 		xvec   = xdata[i]
 		ylabel = ydata[i]
+		wtxSum = bias
 		if(len(xvec) < len(wvec)):
 			looprange = len(xvec)
 		for i in range(0,looprange):
@@ -261,6 +324,7 @@ def TestMarginPerceptron(xdata, ydata, wvec, bias, wsize, margin):
 	for i in range(0,len(xdata)):
 		xvec   = xdata[i]
 		ylabel = ydata[i]
+		wtxSum = bias
 		if(len(xvec) < len(wvec)):
 			looprange = len(xvec)
 		for i in range(0,looprange):
