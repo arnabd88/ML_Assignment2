@@ -120,12 +120,34 @@ def Run_Q3_3_2_mp():
 
 
 
+##-------- Run the aggressive perceptron on adult data set for training and testing ----##
+def Run_Q3_grad():
+	print "//Question-3: For Grads (Aggressive Perceptron) Report on Adult Data Set -------------"
+	[XData, YData, FSize] = func.parseInfo(trainFileHandle)
+	maxVecLen = max(FSize)
+	for i in range(1,5):
+		for k in MarginList:
+			[Bias, Wvec, LearningMistake] = func.AggressivePerceptron(1, XData, YData, maxVecLen, i, k, 0)
+			mistakeCount = func.TestMarginPerceptron(XData, YData, Wvec, Bias, maxVecLen, k)
+			TrainAccuracy = ((float(len(XData) - mistakeCount))/len(XData))*100
+			print 'Using Dynamic Learning rate, number of epochs = ',i,', Margin = ', k,  ', Initialization = random with mean 0 and sd 0.1'
+			#print '\t Learned Weight Vector    = ', Wvec
+			print '\t Learned Bias             = ', Bias
+			print '\t Mistakes during Learning = ', LearningMistake
+			print '\t Learning Accuracy        = ', TrainAccuracy,'%\n'
+			if(test_index != -1):
+				[testXData, testYData] = func.parseInfoTest(testFilehandle, maxVecLen)
+				testMistake = func.TestMarginPerceptron(testXData, testYData, Wvec, Bias, maxVecLen, k)
+				TestAccuracy = ((float(len(testXData) - testMistake))/len(testXData))*100
+				print '\t Test Accuracy            = ', TestAccuracy,'%\n'
 
+	print "//End of Question-3: For Grads Report -----------------------------\n\n"
 
 
 
 
 Run_Q3_3_1()
-Run_Q3_3_2_sp()
-Run_Q3_3_2_mp()
+#Run_Q3_3_2_sp()
+#Run_Q3_3_2_mp()
+Run_Q3_grad()
 
