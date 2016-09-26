@@ -1,0 +1,290 @@
+*********************************************************************************
+//Question-3.3.1 Report (Sanity check using Table2 -----------------------------
+*********************************************************************************
+Using Learning Rate =  1  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0, 1, 0, -1, 2]
+	 Learned Bias             =  0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+Using Learning Rate =  0.1  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0.0, 0.1, 0.0, -0.1, 0.2]
+	 Learned Bias             =  0.0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+Using Learning Rate =  0.01  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0.0, 0.01, 0.0, -0.01, 0.02]
+	 Learned Bias             =  0.0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+//End of Question-3.3.1 Report -------------------------------------------------
+
+
+*********************************************************************************
+//Question-3: For Grads (Aggressive Perceptron-batch 3,4,5) With No Shuffle Report on Adult Data Set -------------
+*********************************************************************************
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  0 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -0.00968261615205
+	 Mistakes during Learning =  4424
+	 Learning Accuracy        =  62.9872154662 %
+
+	 Test Accuracy            =  62.4469346388 %
+
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  1 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -0.537700990634
+	 Mistakes during Learning =  7913
+	 Learning Accuracy        =  81.7430620518 %
+
+	 Test Accuracy            =  82.001759284 %
+
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  2 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -1.08024564314
+	 Mistakes during Learning =  7913
+	 Learning Accuracy        =  81.7430620518 %
+
+	 Test Accuracy            =  82.001759284 %
+
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  3 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -1.6144544454
+	 Mistakes during Learning =  7913
+	 Learning Accuracy        =  81.7430620518 %
+
+	 Test Accuracy            =  82.001759284 %
+
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  4 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -2.16323472267
+	 Mistakes during Learning =  7913
+	 Learning Accuracy        =  81.7430620518 %
+
+	 Test Accuracy            =  82.001759284 %
+
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  5 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -2.70732577382
+	 Mistakes during Learning =  7913
+	 Learning Accuracy        =  81.7430620518 %
+
+	 Test Accuracy            =  82.001759284 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  0 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -0.00348903323002
+	 Mistakes during Learning =  5916
+	 Learning Accuracy        =  66.791393826 %
+
+	 Test Accuracy            =  65.9157838375 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  1 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -0.55354458238
+	 Mistakes during Learning =  10492
+	 Learning Accuracy        =  81.8210165263 %
+
+	 Test Accuracy            =  82.04382912 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  2 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -1.10021183782
+	 Mistakes during Learning =  10492
+	 Learning Accuracy        =  81.8210165263 %
+
+	 Test Accuracy            =  82.04382912 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  3 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -1.65828663736
+	 Mistakes during Learning =  10492
+	 Learning Accuracy        =  81.8210165263 %
+
+	 Test Accuracy            =  82.04382912 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  4 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -2.20654720007
+	 Mistakes during Learning =  10492
+	 Learning Accuracy        =  81.8210165263 %
+
+	 Test Accuracy            =  82.04382912 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  5 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -2.76837753552
+	 Mistakes during Learning =  10492
+	 Learning Accuracy        =  81.8210165263 %
+
+	 Test Accuracy            =  82.04382912 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  0 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  0.00149471720956
+	 Mistakes during Learning =  7471
+	 Learning Accuracy        =  79.248518865 %
+
+	 Test Accuracy            =  78.2231231116 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  1 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -0.556418455682
+	 Mistakes during Learning =  13064
+	 Learning Accuracy        =  81.8677892111 %
+
+	 Test Accuracy            =  82.0208819367 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  2 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -1.13333695689
+	 Mistakes during Learning =  13064
+	 Learning Accuracy        =  81.8677892111 %
+
+	 Test Accuracy            =  82.0208819367 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  3 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -1.68700958156
+	 Mistakes during Learning =  13064
+	 Learning Accuracy        =  81.8677892111 %
+
+	 Test Accuracy            =  82.0208819367 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  4 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -2.25765835049
+	 Mistakes during Learning =  13064
+	 Learning Accuracy        =  81.8677892111 %
+
+	 Test Accuracy            =  82.0208819367 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  5 , Initialization = random with mean 0 and sd 0.01, no Shuffle
+	 Learned Bias             =  -2.80071998582
+	 Mistakes during Learning =  13064
+	 Learning Accuracy        =  81.8677892111 %
+
+	 Test Accuracy            =  82.0208819367 %
+
+//End of Question-3: For Grads(Aggressive Perceptron-Batch Mode-NoShuffle Report -----------------------------
+
+
+
+*********************************************************************************
+//Question-3: For Grads (Aggressive Perceptron-batch 3,4,5) With Shuffle Report on Adult Data Set -------------
+*********************************************************************************
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  0 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -0.0017325985905
+	 Mistakes during Learning =  4483
+	 Learning Accuracy        =  77.3152478952 %
+
+	 Test Accuracy            =  75.8901594829 %
+
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  1 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -0.518594249886
+	 Mistakes during Learning =  7758
+	 Learning Accuracy        =  80.573744933 %
+
+	 Test Accuracy            =  81.1029946074 %
+
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  2 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -0.363459249541
+	 Mistakes during Learning =  7839
+	 Learning Accuracy        =  83.4580604927 %
+
+	 Test Accuracy            =  82.8202088194 %
+
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  3 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -2.14718093255
+	 Mistakes during Learning =  7850
+	 Learning Accuracy        =  76.9098846274 %
+
+	 Test Accuracy            =  77.57295292 %
+
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  4 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -1.96308998996
+	 Mistakes during Learning =  7821
+	 Learning Accuracy        =  77.0813844715 %
+
+	 Test Accuracy            =  77.3664282709 %
+
+Using Dynamic Learning rate, number of epochs =  3 , Margin =  5 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -2.56819588611
+	 Mistakes during Learning =  7842
+	 Learning Accuracy        =  82.647333957 %
+
+	 Test Accuracy            =  82.7169464948 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  0 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -0.00504694231364
+	 Mistakes during Learning =  5940
+	 Learning Accuracy        =  74.9766136576 %
+
+	 Test Accuracy            =  74.3526982063 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  1 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -0.517209589229
+	 Mistakes during Learning =  10328
+	 Learning Accuracy        =  79.2641097599 %
+
+	 Test Accuracy            =  79.6305503499 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  2 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -1.45843367251
+	 Mistakes during Learning =  10211
+	 Learning Accuracy        =  77.2528843156 %
+
+	 Test Accuracy            =  77.6456190003 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  3 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -1.17940935068
+	 Mistakes during Learning =  10344
+	 Learning Accuracy        =  80.8387901466 %
+
+	 Test Accuracy            =  80.6631735954 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  4 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -1.58391459769
+	 Mistakes during Learning =  10380
+	 Learning Accuracy        =  81.4468350483 %
+
+	 Test Accuracy            =  81.6690251272 %
+
+Using Dynamic Learning rate, number of epochs =  4 , Margin =  5 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -2.5370912623
+	 Mistakes during Learning =  10404
+	 Learning Accuracy        =  81.7742438416 %
+
+	 Test Accuracy            =  81.844953532 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  0 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -0.00775895051337
+	 Mistakes during Learning =  7303
+	 Learning Accuracy        =  80.0436545058 %
+
+	 Test Accuracy            =  79.0606952997 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  1 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -0.498756478997
+	 Mistakes during Learning =  12810
+	 Learning Accuracy        =  80.5269722482 %
+
+	 Test Accuracy            =  81.2827475427 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  2 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -1.09298306546
+	 Mistakes during Learning =  12967
+	 Learning Accuracy        =  81.322107889 %
+
+	 Test Accuracy            =  81.6269552912 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  3 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -0.989864697746
+	 Mistakes during Learning =  12954
+	 Learning Accuracy        =  82.5693794824 %
+
+	 Test Accuracy            =  81.2215550541 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  4 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -2.46638893657
+	 Mistakes during Learning =  12894
+	 Learning Accuracy        =  82.1172435298 %
+
+	 Test Accuracy            =  82.2312311164 %
+
+Using Dynamic Learning rate, number of epochs =  5 , Margin =  5 , Initialization = random with mean 0 and sd 0.01, with Shuffle
+	 Learned Bias             =  -2.60509696699
+	 Mistakes during Learning =  12936
+	 Learning Accuracy        =  82.3355160586 %
+
+	 Test Accuracy            =  82.1968103415 %
+
+//End of Question-3: For Grads(Aggressive Perceptron-Batch Mode-Shuffle Report -----------------------------
+
+
+

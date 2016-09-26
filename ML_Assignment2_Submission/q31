@@ -1,0 +1,24 @@
+*********************************************************************************
+//Question-3.3.1 Report (Sanity check using Table2 -----------------------------
+*********************************************************************************
+Using Learning Rate =  1  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0, 1, 0, -1, 2]
+	 Learned Bias             =  0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+Using Learning Rate =  0.1  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0.0, 0.1, 0.0, -0.1, 0.2]
+	 Learned Bias             =  0.0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+Using Learning Rate =  0.01  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0.0, 0.01, 0.0, -0.01, 0.02]
+	 Learned Bias             =  0.0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+//End of Question-3.3.1 Report -------------------------------------------------
+
+

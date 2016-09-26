@@ -1,0 +1,183 @@
+*********************************************************************************
+//Question-3.3.1 Report (Sanity check using Table2 -----------------------------
+*********************************************************************************
+Using Learning Rate =  1  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0, 1, 0, -1, 2]
+	 Learned Bias             =  0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+Using Learning Rate =  0.1  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0.0, 0.1, 0.0, -0.1, 0.2]
+	 Learned Bias             =  0.0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+Using Learning Rate =  0.01  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0.0, 0.01, 0.0, -0.01, 0.02]
+	 Learned Bias             =  0.0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+//End of Question-3.3.1 Report -------------------------------------------------
+
+
+*********************************************************************************
+//Question-3.3.2 (Simple Perceptron-single pass) Report on Adult Data -----------------------------
+*********************************************************************************
+Using Learning Rate =  1  number of epochs = Sinlge Pass,  Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -2.99526669209
+	 Mistakes during Learning =  1373
+	 Learning Accuracy        =  78.671655753 %
+
+	 Test Accuracy            =  77.3817263931 %
+
+Using Learning Rate =  0.1  number of epochs = Sinlge Pass,  Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.300220278685
+	 Mistakes during Learning =  1373
+	 Learning Accuracy        =  81.3532896788 %
+
+	 Test Accuracy            =  81.0915210158 %
+
+Using Learning Rate =  0.01  number of epochs = Sinlge Pass,  Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.0293096782516
+	 Mistakes during Learning =  1390
+	 Learning Accuracy        =  82.9123791706 %
+
+	 Test Accuracy            =  82.3536160936 %
+
+//End of Question-3.3.2(simple Perceptron-single pass) Report ------------------------------------
+
+
+
+*********************************************************************************
+//Question-3.3.2 (Margin Perceptron-single pass) Report on Adult Data -----------------------------
+*********************************************************************************
+Using Learning Rate =  1 , number of epochs = Single Pass,  Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -2.99963904254
+	 Mistakes during Learning =  1373
+	 Learning Accuracy        =  78.671655753 %
+
+	 Test Accuracy            =  77.3817263931 %
+
+Using Learning Rate =  1 , number of epochs = Single Pass,  Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -3.00177459945
+	 Mistakes during Learning =  1493
+	 Learning Accuracy        =  76.598066729 %
+
+	 Test Accuracy            =  76.146403029 %
+
+Using Learning Rate =  1 , number of epochs = Single Pass,  Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -3.00447933395
+	 Mistakes during Learning =  1575
+	 Learning Accuracy        =  73.8228874337 %
+
+	 Test Accuracy            =  73.1403220255 %
+
+Using Learning Rate =  1 , number of epochs = Single Pass,  Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.01771399863
+	 Mistakes during Learning =  1630
+	 Learning Accuracy        =  73.8072965388 %
+
+	 Test Accuracy            =  72.6622557081 %
+
+Using Learning Rate =  1 , number of epochs = Single Pass,  Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.00148480579
+	 Mistakes during Learning =  1692
+	 Learning Accuracy        =  70.2369816027 %
+
+	 Test Accuracy            =  69.5223161357 %
+
+Using Learning Rate =  1 , number of epochs = Single Pass,  Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -5.00117202611
+	 Mistakes during Learning =  1781
+	 Learning Accuracy        =  72.9186155285 %
+
+	 Test Accuracy            =  72.1880139213 %
+
+Using Learning Rate =  0.1 , number of epochs = Single Pass,  Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.304500476342
+	 Mistakes during Learning =  1373
+	 Learning Accuracy        =  81.3376987839 %
+
+	 Test Accuracy            =  81.0915210158 %
+
+Using Learning Rate =  0.1 , number of epochs = Single Pass,  Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.716866751164
+	 Mistakes during Learning =  1947
+	 Learning Accuracy        =  70.2525724977 %
+
+	 Test Accuracy            =  70.0233296363 %
+
+Using Learning Rate =  0.1 , number of epochs = Single Pass,  Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.994660434409
+	 Mistakes during Learning =  2176
+	 Learning Accuracy        =  67.9607109448 %
+
+	 Test Accuracy            =  67.8204000459 %
+
+Using Learning Rate =  0.1 , number of epochs = Single Pass,  Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.10418246729
+	 Mistakes during Learning =  2279
+	 Learning Accuracy        =  65.5129404428 %
+
+	 Test Accuracy            =  65.4338929896 %
+
+Using Learning Rate =  0.1 , number of epochs = Single Pass,  Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.29565771273
+	 Mistakes during Learning =  2365
+	 Learning Accuracy        =  64.343623324 %
+
+	 Test Accuracy            =  63.7778712663 %
+
+Using Learning Rate =  0.1 , number of epochs = Single Pass,  Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.59573875116
+	 Mistakes during Learning =  2436
+	 Learning Accuracy        =  64.2500779545 %
+
+	 Test Accuracy            =  64.3515508471 %
+
+Using Learning Rate =  0.01 , number of epochs = Single Pass,  Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.0253207020708
+	 Mistakes during Learning =  1373
+	 Learning Accuracy        =  78.671655753 %
+
+	 Test Accuracy            =  77.3817263931 %
+
+Using Learning Rate =  0.01 , number of epochs = Single Pass,  Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.230197133945
+	 Mistakes during Learning =  2653
+	 Learning Accuracy        =  61.6308076084 %
+
+	 Test Accuracy            =  61.53287184 %
+
+Using Learning Rate =  0.01 , number of epochs = Single Pass,  Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.416474674697
+	 Mistakes during Learning =  2910
+	 Learning Accuracy        =  59.2921733708 %
+
+	 Test Accuracy            =  59.219030864 %
+
+Using Learning Rate =  0.01 , number of epochs = Single Pass,  Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.593608855813
+	 Mistakes during Learning =  3058
+	 Learning Accuracy        =  58.1384471469 %
+
+	 Test Accuracy            =  58.2017057406 %
+
+Using Learning Rate =  0.01 , number of epochs = Single Pass,  Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.7671579976
+	 Mistakes during Learning =  3149
+	 Learning Accuracy        =  55.8309946991 %
+
+	 Test Accuracy            =  55.7578307263 %
+
+Using Learning Rate =  0.01 , number of epochs = Single Pass,  Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.929041228599
+	 Mistakes during Learning =  3215
+	 Learning Accuracy        =  55.4412223262 %
+
+	 Test Accuracy            =  55.1459058401 %
+
+//End of Question-3.3.2(Margin Perceptron-single pass) Report ------------------------------------
+

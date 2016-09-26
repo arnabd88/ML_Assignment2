@@ -1,0 +1,934 @@
+*********************************************************************************
+//Question-3.3.1 Report (Sanity check using Table2 -----------------------------
+*********************************************************************************
+Using Learning Rate =  1  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0, 1, 0, -1, 2]
+	 Learned Bias             =  0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+Using Learning Rate =  0.1  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0.0, 0.1, 0.0, -0.1, 0.2]
+	 Learned Bias             =  0.0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+Using Learning Rate =  0.01  number of epochs =  1 Initialization = @ default 0 , No-Shuffle
+	 Learned Weight Vector    =  [0.0, 0.01, 0.0, -0.01, 0.02]
+	 Learned Bias             =  0.0
+	 Mistakes during Learning =  4
+	 Learning Accuracy        =  83.3333333333 %
+
+//End of Question-3.3.1 Report -------------------------------------------------
+
+
+***************************************************************************************************
+//Question-3.3.2 (Simple Perceptron-batch 3,4,5) No Shuffle Report on Adult Data -----------------------------
+***************************************************************************************************
+Using Learning Rate =  1  number of epochs =  3   Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.00258816055
+	 Mistakes during Learning =  4054
+	 Learning Accuracy        =  79.622700343 %
+
+	 Test Accuracy            =  79.3972539871 %
+
+Using Learning Rate =  0.1  number of epochs =  3   Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.289600606979
+	 Mistakes during Learning =  4045
+	 Learning Accuracy        =  79.5915185532 %
+
+	 Test Accuracy            =  78.4219986997 %
+
+Using Learning Rate =  0.01  number of epochs =  3   Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.043126399344
+	 Mistakes during Learning =  4054
+	 Learning Accuracy        =  79.622700343 %
+
+	 Test Accuracy            =  79.3972539871 %
+
+Using Learning Rate =  1  number of epochs =  4   Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -3.99468581164
+	 Mistakes during Learning =  5394
+	 Learning Accuracy        =  80.3554724041 %
+
+	 Test Accuracy            =  79.6190767583 %
+
+Using Learning Rate =  0.1  number of epochs =  4   Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.318648912647
+	 Mistakes during Learning =  5427
+	 Learning Accuracy        =  74.1970689118 %
+
+	 Test Accuracy            =  73.442459938 %
+
+Using Learning Rate =  0.01  number of epochs =  4   Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.0506914085638
+	 Mistakes during Learning =  5412
+	 Learning Accuracy        =  78.4533832242 %
+
+	 Test Accuracy            =  77.8865644242 %
+
+Using Learning Rate =  1  number of epochs =  5   Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.00401407414
+	 Mistakes during Learning =  6752
+	 Learning Accuracy        =  83.2865606486 %
+
+	 Test Accuracy            =  82.7896125751 %
+
+Using Learning Rate =  0.1  number of epochs =  5   Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.402212689003
+	 Mistakes during Learning =  6752
+	 Learning Accuracy        =  83.2865606486 %
+
+	 Test Accuracy            =  82.7896125751 %
+
+Using Learning Rate =  0.01  number of epochs =  5   Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.0365705825593
+	 Mistakes during Learning =  6732
+	 Learning Accuracy        =  81.0102899906 %
+
+	 Test Accuracy            =  80.5331395571 %
+
+//End of Question-3.3.2(simple Perceptron-Batch Mode-NoShuffle) Report ------------------------------------
+
+
+
+***************************************************************************************************
+//Question-3.3.2 (Margin Perceptron-batch 3,4,5) No Shuffle Report on Adult Data -----------------------------
+***************************************************************************************************
+Using Learning Rate =  1 , number of epochs =  3   Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -2.99692310214
+	 Mistakes during Learning =  4045
+	 Learning Accuracy        =  79.5915185532 %
+
+	 Test Accuracy            =  78.4219986997 %
+
+Using Learning Rate =  1 , number of epochs =  3   Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.99681810481
+	 Mistakes during Learning =  4345
+	 Learning Accuracy        =  80.6672903025 %
+
+	 Test Accuracy            =  80.7090679619 %
+
+Using Learning Rate =  1 , number of epochs =  3   Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.99888811133
+	 Mistakes during Learning =  4583
+	 Learning Accuracy        =  76.5668849392 %
+
+	 Test Accuracy            =  75.5191800207 %
+
+Using Learning Rate =  1 , number of epochs =  3   Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -5.0050822178
+	 Mistakes during Learning =  4787
+	 Learning Accuracy        =  74.4153414406 %
+
+	 Test Accuracy            =  73.38509198 %
+
+Using Learning Rate =  1 , number of epochs =  3   Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.99531296293
+	 Mistakes during Learning =  4959
+	 Learning Accuracy        =  69.8783910196 %
+
+	 Test Accuracy            =  68.6809194171 %
+
+Using Learning Rate =  1 , number of epochs =  3   Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -6.00209525564
+	 Mistakes during Learning =  5144
+	 Learning Accuracy        =  73.4798877456 %
+
+	 Test Accuracy            =  72.2912762458 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.289268608829
+	 Mistakes during Learning =  4045
+	 Learning Accuracy        =  79.5915185532 %
+
+	 Test Accuracy            =  78.4219986997 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.796138300361
+	 Mistakes during Learning =  5634
+	 Learning Accuracy        =  69.3638914874 %
+
+	 Test Accuracy            =  68.8377251692 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.19000839558
+	 Mistakes during Learning =  6176
+	 Learning Accuracy        =  67.352666043 %
+
+	 Test Accuracy            =  66.8566183501 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.51653426477
+	 Mistakes during Learning =  6475
+	 Learning Accuracy        =  65.0763953851 %
+
+	 Test Accuracy            =  64.2788847669 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.903123976
+	 Mistakes during Learning =  6667
+	 Learning Accuracy        =  65.1855316495 %
+
+	 Test Accuracy            =  64.5466019046 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -2.11224881711
+	 Mistakes during Learning =  6807
+	 Learning Accuracy        =  64.6086685376 %
+
+	 Test Accuracy            =  64.0608865262 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.0649831643206
+	 Mistakes during Learning =  4085
+	 Learning Accuracy        =  82.3043342688 %
+
+	 Test Accuracy            =  81.5619382721 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.310731705374
+	 Mistakes during Learning =  7233
+	 Learning Accuracy        =  63.0339881509 %
+
+	 Test Accuracy            =  62.4737063525 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.492699274288
+	 Mistakes during Learning =  7725
+	 Learning Accuracy        =  62.6598066729 %
+
+	 Test Accuracy            =  62.3780930891 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.706165048103
+	 Mistakes during Learning =  8073
+	 Learning Accuracy        =  62.2544434051 %
+
+	 Test Accuracy            =  61.9879909741 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.856294241143
+	 Mistakes during Learning =  8365
+	 Learning Accuracy        =  61.1786716558 %
+
+	 Test Accuracy            =  61.0318583394 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.03099711339
+	 Mistakes during Learning =  8601
+	 Learning Accuracy        =  60.2743997505 %
+
+	 Test Accuracy            =  60.2248823957 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -3.01202779166
+	 Mistakes during Learning =  5427
+	 Learning Accuracy        =  74.1970689118 %
+
+	 Test Accuracy            =  73.442459938 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.0018208332
+	 Mistakes during Learning =  5794
+	 Learning Accuracy        =  75.849703773 %
+
+	 Test Accuracy            =  74.5248020805 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.99709170064
+	 Mistakes during Learning =  6073
+	 Learning Accuracy        =  77.4399750546 %
+
+	 Test Accuracy            =  76.0125444602 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -5.99328534393
+	 Mistakes during Learning =  6358
+	 Learning Accuracy        =  75.101340817 %
+
+	 Test Accuracy            =  74.130875435 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -5.9938447298
+	 Mistakes during Learning =  6574
+	 Learning Accuracy        =  74.898659183 %
+
+	 Test Accuracy            =  73.7560714422 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -6.99042667883
+	 Mistakes during Learning =  6769
+	 Learning Accuracy        =  71.8116619894 %
+
+	 Test Accuracy            =  70.2069071022 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.397728125434
+	 Mistakes during Learning =  5394
+	 Learning Accuracy        =  80.3554724041 %
+
+	 Test Accuracy            =  79.6190767583 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.899084737786
+	 Mistakes during Learning =  7451
+	 Learning Accuracy        =  70.6735266604 %
+
+	 Test Accuracy            =  69.5261406662 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.2085518617
+	 Mistakes during Learning =  8148
+	 Learning Accuracy        =  66.5263486124 %
+
+	 Test Accuracy            =  66.0840631812 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.58757838925
+	 Mistakes during Learning =  8536
+	 Learning Accuracy        =  65.6376676021 %
+
+	 Test Accuracy            =  64.684285004 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.8998241919
+	 Mistakes during Learning =  8789
+	 Learning Accuracy        =  64.5618958528 %
+
+	 Test Accuracy            =  63.9346770184 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -2.20080448478
+	 Mistakes during Learning =  8958
+	 Learning Accuracy        =  64.6554412223 %
+
+	 Test Accuracy            =  63.7816957968 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.0542110406943
+	 Mistakes during Learning =  5412
+	 Learning Accuracy        =  78.4533832242 %
+
+	 Test Accuracy            =  77.8865644242 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.342960770525
+	 Mistakes during Learning =  9472
+	 Learning Accuracy        =  63.3146242594 %
+
+	 Test Accuracy            =  62.8446858148 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.55038144804
+	 Mistakes during Learning =  10049
+	 Learning Accuracy        =  63.2522606798 %
+
+	 Test Accuracy            =  62.768195204 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.733017426286
+	 Mistakes during Learning =  10450
+	 Learning Accuracy        =  62.7221702526 %
+
+	 Test Accuracy            =  62.6419856963 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.902214409155
+	 Mistakes during Learning =  10800
+	 Learning Accuracy        =  62.5506704085 %
+
+	 Test Accuracy            =  62.1639193789 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.06883225582
+	 Mistakes during Learning =  11078
+	 Learning Accuracy        =  61.4125350795 %
+
+	 Test Accuracy            =  61.192488622 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -3.99051360799
+	 Mistakes during Learning =  6732
+	 Learning Accuracy        =  81.0102899906 %
+
+	 Test Accuracy            =  80.5331395571 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.00405391534
+	 Mistakes during Learning =  7218
+	 Learning Accuracy        =  73.9008419083 %
+
+	 Test Accuracy            =  72.4519065285 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -4.99560707061
+	 Mistakes during Learning =  7595
+	 Learning Accuracy        =  73.4954786405 %
+
+	 Test Accuracy            =  71.8323325812 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -6.99832114682
+	 Mistakes during Learning =  7937
+	 Learning Accuracy        =  76.7072029935 %
+
+	 Test Accuracy            =  75.3432516159 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -5.99570603423
+	 Mistakes during Learning =  8184
+	 Learning Accuracy        =  70.5955721858 %
+
+	 Test Accuracy            =  69.2431254064 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -6.00156740677
+	 Mistakes during Learning =  8486
+	 Learning Accuracy        =  70.9541627689 %
+
+	 Test Accuracy            =  70.0309786974 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.371876205863
+	 Mistakes during Learning =  6732
+	 Learning Accuracy        =  81.0102899906 %
+
+	 Test Accuracy            =  80.5331395571 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.895126839625
+	 Mistakes during Learning =  9287
+	 Learning Accuracy        =  70.3461178672 %
+
+	 Test Accuracy            =  69.7632615596 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.29931969614
+	 Mistakes during Learning =  10137
+	 Learning Accuracy        =  66.8381665108 %
+
+	 Test Accuracy            =  66.1414311393 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.61576979413
+	 Mistakes during Learning =  10594
+	 Learning Accuracy        =  64.9360773308 %
+
+	 Test Accuracy            =  64.0417638735 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.98837975373
+	 Mistakes during Learning =  10900
+	 Learning Accuracy        =  65.3726223885 %
+
+	 Test Accuracy            =  64.5733736184 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -2.40571839074
+	 Mistakes during Learning =  11100
+	 Learning Accuracy        =  64.9360773308 %
+
+	 Test Accuracy            =  64.3094810112 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  0 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.0653616628662
+	 Mistakes during Learning =  6806
+	 Learning Accuracy        =  83.5516058622 %
+
+	 Test Accuracy            =  82.8010861667 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  1 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.377825387473
+	 Mistakes during Learning =  11705
+	 Learning Accuracy        =  63.953850951 %
+
+	 Test Accuracy            =  63.2998049489 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  2 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.596443749842
+	 Mistakes during Learning =  12360
+	 Learning Accuracy        =  63.6108512629 %
+
+	 Test Accuracy            =  63.2959804184 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  3 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.800907606879
+	 Mistakes during Learning =  12797
+	 Learning Accuracy        =  63.766760212 %
+
+	 Test Accuracy            =  63.456610701 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  4 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -0.966331908704
+	 Mistakes during Learning =  13184
+	 Learning Accuracy        =  62.8936700967 %
+
+	 Test Accuracy            =  62.6228630436 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  5 , Initialization = random with mean 0 and sd 0.01
+	 Learned Bias             =  -1.11236788115
+	 Mistakes during Learning =  13507
+	 Learning Accuracy        =  62.3323978796 %
+
+	 Test Accuracy            =  61.9994645657 %
+
+//End of Question-3.3.2(Margin Perceptron-Batch Mode-NoShuffle) Report ------------------------------------
+
+
+
+***************************************************************************************************
+//Question-3.3.2 (Simple Perceptron-batch 3,4,5) With Shuffle Report on Adult Data -----------------------------
+***************************************************************************************************
+Using Learning Rate =  1  number of epochs =  3   Initialization = random with mean 0 and sd 0.01, With Shuffle
+	 Learned Bias             =  -1.98022899934
+	 Mistakes during Learning =  4104
+	 Learning Accuracy        =  69.0364826941 %
+
+	 Test Accuracy            =  68.5470608483 %
+
+Using Learning Rate =  0.1  number of epochs =  3   Initialization = random with mean 0 and sd 0.1, With Shuffle
+	 Learned Bias             =  -0.389109194994
+	 Mistakes during Learning =  4102
+	 Learning Accuracy        =  82.7876520112 %
+
+	 Test Accuracy            =  82.4951237236 %
+
+Using Learning Rate =  0.01  number of epochs =  3   Initialization = random with mean 0 and sd 0.01, With Shuffle
+	 Learned Bias             =  -0.0421817367545
+	 Mistakes during Learning =  4103
+	 Learning Accuracy        =  77.7517929529 %
+
+	 Test Accuracy            =  78.1810532757 %
+
+Using Learning Rate =  1  number of epochs =  4   Initialization = random with mean 0 and sd 0.01, With Shuffle
+	 Learned Bias             =  -3.02482129704
+	 Mistakes during Learning =  5471
+	 Learning Accuracy        =  82.8500155909 %
+
+	 Test Accuracy            =  81.9252686733 %
+
+Using Learning Rate =  0.1  number of epochs =  4   Initialization = random with mean 0 and sd 0.01, With Shuffle
+	 Learned Bias             =  -0.319061650345
+	 Mistakes during Learning =  5483
+	 Learning Accuracy        =  80.2775179295 %
+
+	 Test Accuracy            =  80.0894940146 %
+
+Using Learning Rate =  0.01  number of epochs =  4   Initialization = random with mean 0 and sd 0.01, With Shuffle
+	 Learned Bias             =  -0.0256652231122
+	 Mistakes during Learning =  5399
+	 Learning Accuracy        =  80.8543810415 %
+
+	 Test Accuracy            =  80.8008566948 %
+
+Using Learning Rate =  1  number of epochs =  5   Initialization = random with mean 0 and sd 0.01, With Shuffle
+	 Learned Bias             =  -5.00235448924
+	 Mistakes during Learning =  6713
+	 Learning Accuracy        =  81.6339257873 %
+
+	 Test Accuracy            =  81.5695873332 %
+
+Using Learning Rate =  0.1  number of epochs =  5   Initialization = random with mean 0 and sd 0.01, With Shuffle
+	 Learned Bias             =  -0.29274169029
+	 Mistakes during Learning =  6751
+	 Learning Accuracy        =  77.7673838478 %
+
+	 Test Accuracy            =  76.8271694649 %
+
+Using Learning Rate =  0.01  number of epochs =  5   Initialization = random with mean 0 and sd 0.01, With Shuffle
+	 Learned Bias             =  -0.0304018774659
+	 Mistakes during Learning =  6727
+	 Learning Accuracy        =  81.883380106 %
+
+	 Test Accuracy            =  82.6595785367 %
+
+//End of Question-3.3.2(simple Perceptron-Batch Mode-Shuffle) Report ------------------------------------
+
+
+
+***************************************************************************************************
+//Question-3.3.2 (Margin Perceptron-batch 3,4,5) With Shuffle Report on Adult Data -----------------------------
+***************************************************************************************************
+Using Learning Rate =  1 , number of epochs =  3   Margin =  0 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -2.99988246781
+	 Mistakes during Learning =  4045
+	 Learning Accuracy        =  79.5915185532 %
+
+	 Test Accuracy            =  78.4219986997 %
+
+Using Learning Rate =  1 , number of epochs =  3   Margin =  1 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -4.00585481036
+	 Mistakes during Learning =  4384
+	 Learning Accuracy        =  78.4222014344 %
+
+	 Test Accuracy            =  77.3893754542 %
+
+Using Learning Rate =  1 , number of epochs =  3   Margin =  2 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -4.00905875665
+	 Mistakes during Learning =  4590
+	 Learning Accuracy        =  69.9719363891 %
+
+	 Test Accuracy            =  68.9945309213 %
+
+Using Learning Rate =  1 , number of epochs =  3   Margin =  3 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -5.99859726612
+	 Mistakes during Learning =  4792
+	 Learning Accuracy        =  78.0324290614 %
+
+	 Test Accuracy            =  77.2669904769 %
+
+Using Learning Rate =  1 , number of epochs =  3   Margin =  4 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -5.01037683181
+	 Mistakes during Learning =  4945
+	 Learning Accuracy        =  70.4708450265 %
+
+	 Test Accuracy            =  69.2201782231 %
+
+Using Learning Rate =  1 , number of epochs =  3   Margin =  5 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -6.01251109827
+	 Mistakes during Learning =  5144
+	 Learning Accuracy        =  73.4798877456 %
+
+	 Test Accuracy            =  72.2912762458 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  0 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.296301531203
+	 Mistakes during Learning =  4045
+	 Learning Accuracy        =  79.5915185532 %
+
+	 Test Accuracy            =  78.4219986997 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  1 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.903450962502
+	 Mistakes during Learning =  5659
+	 Learning Accuracy        =  71.1724352978 %
+
+	 Test Accuracy            =  70.4631506483 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  2 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.10659156376
+	 Mistakes during Learning =  6165
+	 Learning Accuracy        =  66.2768942937 %
+
+	 Test Accuracy            =  65.5868742112 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  3 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.52246877403
+	 Mistakes during Learning =  6475
+	 Learning Accuracy        =  65.0763953851 %
+
+	 Test Accuracy            =  64.2788847669 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  4 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.90034641738
+	 Mistakes during Learning =  6667
+	 Learning Accuracy        =  65.1855316495 %
+
+	 Test Accuracy            =  64.5466019046 %
+
+Using Learning Rate =  0.1 , number of epochs =  3   Margin =  5 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -2.101776184
+	 Mistakes during Learning =  6807
+	 Learning Accuracy        =  64.6086685376 %
+
+	 Test Accuracy            =  64.0608865262 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  0 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.0499460017003
+	 Mistakes during Learning =  4054
+	 Learning Accuracy        =  79.6071094481 %
+
+	 Test Accuracy            =  79.3972539871 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  1 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.318264700894
+	 Mistakes during Learning =  7233
+	 Learning Accuracy        =  63.0339881509 %
+
+	 Test Accuracy            =  62.4737063525 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  2 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.496255154679
+	 Mistakes during Learning =  7725
+	 Learning Accuracy        =  62.6598066729 %
+
+	 Test Accuracy            =  62.3780930891 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  3 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.695790884032
+	 Mistakes during Learning =  8077
+	 Learning Accuracy        =  62.2076707203 %
+
+	 Test Accuracy            =  61.9650437909 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  4 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.854892715371
+	 Mistakes during Learning =  8365
+	 Learning Accuracy        =  61.1786716558 %
+
+	 Test Accuracy            =  61.0318583394 %
+
+Using Learning Rate =  0.01 , number of epochs =  3   Margin =  5 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.03785615797
+	 Mistakes during Learning =  8604
+	 Learning Accuracy        =  60.6797630184 %
+
+	 Test Accuracy            =  60.645580755 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  0 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -3.00429960936
+	 Mistakes during Learning =  5427
+	 Learning Accuracy        =  74.1970689118 %
+
+	 Test Accuracy            =  73.442459938 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  1 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -3.99885758442
+	 Mistakes during Learning =  5762
+	 Learning Accuracy        =  77.5335204241 %
+
+	 Test Accuracy            =  76.5594523272 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  2 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -4.99959101507
+	 Mistakes during Learning =  6073
+	 Learning Accuracy        =  77.4399750546 %
+
+	 Test Accuracy            =  76.0125444602 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  3 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -6.0008262668
+	 Mistakes during Learning =  6338
+	 Learning Accuracy        =  76.3018397256 %
+
+	 Test Accuracy            =  75.5650743871 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  4 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -6.00165554872
+	 Mistakes during Learning =  6584
+	 Learning Accuracy        =  73.3863423761 %
+
+	 Test Accuracy            =  72.8190614602 %
+
+Using Learning Rate =  1 , number of epochs =  4   Margin =  5 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -6.01595841563
+	 Mistakes during Learning =  6818
+	 Learning Accuracy        =  73.1212971625 %
+
+	 Test Accuracy            =  72.0273836387 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  0 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.396541231238
+	 Mistakes during Learning =  5394
+	 Learning Accuracy        =  80.3554724041 %
+
+	 Test Accuracy            =  79.6190767583 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  1 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.801061573291
+	 Mistakes during Learning =  7482
+	 Learning Accuracy        =  69.0208917992 %
+
+	 Test Accuracy            =  68.0039775118 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  2 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.18464863918
+	 Mistakes during Learning =  8156
+	 Learning Accuracy        =  66.4016214531 %
+
+	 Test Accuracy            =  65.4568401729 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  3 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.59165188537
+	 Mistakes during Learning =  8536
+	 Learning Accuracy        =  65.6376676021 %
+
+	 Test Accuracy            =  64.684285004 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  4 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.9190381966
+	 Mistakes during Learning =  8789
+	 Learning Accuracy        =  64.4683504833 %
+
+	 Test Accuracy            =  63.8046429801 %
+
+Using Learning Rate =  0.1 , number of epochs =  4   Margin =  5 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -2.28875935403
+	 Mistakes during Learning =  8961
+	 Learning Accuracy        =  64.904895541 %
+
+	 Test Accuracy            =  64.4089188052 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  0 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.0361631893676
+	 Mistakes during Learning =  5394
+	 Learning Accuracy        =  80.3554724041 %
+
+	 Test Accuracy            =  79.6190767583 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  1 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.345605164959
+	 Mistakes during Learning =  9472
+	 Learning Accuracy        =  63.3146242594 %
+
+	 Test Accuracy            =  62.8446858148 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  2 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.549974542048
+	 Mistakes during Learning =  10050
+	 Learning Accuracy        =  63.392578734 %
+
+	 Test Accuracy            =  63.0397368723 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  3 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.73682315685
+	 Mistakes during Learning =  10450
+	 Learning Accuracy        =  62.7221702526 %
+
+	 Test Accuracy            =  62.6419856963 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  4 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.910938269509
+	 Mistakes during Learning =  10796
+	 Learning Accuracy        =  61.9893981915 %
+
+	 Test Accuracy            =  61.5864152675 %
+
+Using Learning Rate =  0.01 , number of epochs =  4   Margin =  5 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.06739603658
+	 Mistakes during Learning =  11078
+	 Learning Accuracy        =  61.4125350795 %
+
+	 Test Accuracy            =  61.192488622 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  0 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -4.0094006261
+	 Mistakes during Learning =  6752
+	 Learning Accuracy        =  83.2865606486 %
+
+	 Test Accuracy            =  82.7896125751 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  1 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -4.99768297633
+	 Mistakes during Learning =  7203
+	 Learning Accuracy        =  78.3598378547 %
+
+	 Test Accuracy            =  78.0013003404 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  2 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -4.9970486201
+	 Mistakes during Learning =  7595
+	 Learning Accuracy        =  73.4954786405 %
+
+	 Test Accuracy            =  71.8323325812 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  3 , Initialization = random with mean 0 and sd 0.1, with shuffle
+	 Learned Bias             =  -6.00123796475
+	 Mistakes during Learning =  7898
+	 Learning Accuracy        =  75.6470221391 %
+
+	 Test Accuracy            =  74.5898190997 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  4 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -6.00416467402
+	 Mistakes during Learning =  8198
+	 Learning Accuracy        =  74.0723417524 %
+
+	 Test Accuracy            =  73.0753050063 %
+
+Using Learning Rate =  1 , number of epochs =  5   Margin =  5 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -7.99658917984
+	 Mistakes during Learning =  8438
+	 Learning Accuracy        =  73.4642968506 %
+
+	 Test Accuracy            =  72.1880139213 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  0 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.39279586984
+	 Mistakes during Learning =  6732
+	 Learning Accuracy        =  81.0102899906 %
+
+	 Test Accuracy            =  80.5331395571 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  1 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.887182954965
+	 Mistakes during Learning =  9287
+	 Learning Accuracy        =  70.3461178672 %
+
+	 Test Accuracy            =  69.7632615596 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  2 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.21120621107
+	 Mistakes during Learning =  10130
+	 Learning Accuracy        =  65.3726223885 %
+
+	 Test Accuracy            =  64.3094810112 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  3 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.60284955933
+	 Mistakes during Learning =  10594
+	 Learning Accuracy        =  64.9360773308 %
+
+	 Test Accuracy            =  64.0417638735 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  4 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.9925921076
+	 Mistakes during Learning =  10900
+	 Learning Accuracy        =  65.3726223885 %
+
+	 Test Accuracy            =  64.5733736184 %
+
+Using Learning Rate =  0.1 , number of epochs =  5   Margin =  5 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -2.39125598641
+	 Mistakes during Learning =  11110
+	 Learning Accuracy        =  65.2167134394 %
+
+	 Test Accuracy            =  64.6498642292 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  0 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.0641264398608
+	 Mistakes during Learning =  6806
+	 Learning Accuracy        =  83.5516058622 %
+
+	 Test Accuracy            =  82.8010861667 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  1 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.371951932043
+	 Mistakes during Learning =  11705
+	 Learning Accuracy        =  63.953850951 %
+
+	 Test Accuracy            =  63.2998049489 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  2 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.570455593593
+	 Mistakes during Learning =  12354
+	 Learning Accuracy        =  63.3769878391 %
+
+	 Test Accuracy            =  63.0971048304 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  3 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.78807186659
+	 Mistakes during Learning =  12798
+	 Learning Accuracy        =  63.5328967883 %
+
+	 Test Accuracy            =  63.208016216 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  4 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -0.965035587394
+	 Mistakes during Learning =  13184
+	 Learning Accuracy        =  62.8936700967 %
+
+	 Test Accuracy            =  62.6228630436 %
+
+Using Learning Rate =  0.01 , number of epochs =  5   Margin =  5 , Initialization = random with mean 0 and sd 0.01, with shuffle
+	 Learned Bias             =  -1.13243818878
+	 Mistakes during Learning =  13511
+	 Learning Accuracy        =  62.5194886186 %
+
+	 Test Accuracy            =  62.221287337 %
+
+//End of Question-3.3.2(Margin Perceptron-Batch Mode-Shuffle) Report ------------------------------------
+
+
+

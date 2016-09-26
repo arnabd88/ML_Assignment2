@@ -1,0 +1,27 @@
+
+data
+  - the provided dataset
+
+Assignment2.py
+  - Main Source code 
+
+func.py
+  - contains the function definitions for perceptrons(all types) and some usable functions
+
+run.sh
+  - Run this file as below
+   ./run.sh
+
+	Execution of run.sh will generate the following files corresponding to different experiment questions
+
+q31
+ - Reports the results for the sanity check using table 2
+
+q32
+ - Reports the results for the simple perceptron and the margin perceptron across learning rates and margin values for single pass (corresponds to the requirements of question 3.3.2)
+
+q33
+ - Reports the results for the simple perceptron and the margin perceptron across learning artes and margin values in batch mode with and without shuffling of data
+
+q3grad
+ - Reports the results of the aggressive perceptron across different margin values in batch mode with and without shuffling of data
