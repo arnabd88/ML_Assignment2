@@ -70,6 +70,7 @@ def parseInfo( rawData ):
 	YData = []
 	Fsize = []
 	x_temp = []
+	seenwt = []
 
 	for flist in rawData:
 		for line in flist:
@@ -79,12 +80,13 @@ def parseInfo( rawData ):
 			x_temp = [0]*currMax
 			for i in lineList[1:]:
 				arg = i.split(':')
+				seenwt.append(int(arg[0]))
 				if(int(arg[0])+1 > len(x_temp)):
 					x_temp = extendList(x_temp, int(arg[0])+1)
 				x_temp[int(arg[0])] = int(arg[1])
 			XData.append(x_temp)
 			Fsize.append(len(x_temp))
-	return [XData, YData, Fsize]
+	return [XData, YData, Fsize, seenwt]
 
 def parseInfoTest( testData, maxSize ):
 	XData  = []
@@ -105,7 +107,7 @@ def parseInfoTest( testData, maxSize ):
 	return [XData, YData]
 
 
-def AggressivePerceptron( initEn, xdata, ydata, wsize, epochs, margin, enShuffle):
+def AggressivePerceptron( initEn, xdata, ydata, wsize, epochs, margin, enShuffle, seenwt):
 	wvec = []
 	bias = 0
 	mistakeCounter = 0
@@ -119,6 +121,9 @@ def AggressivePerceptron( initEn, xdata, ydata, wsize, epochs, margin, enShuffle
 		wvec = numpy.random.normal(0,0.01,wsize+1)
 		bias = wvec[0]
 		wvec = wvec[1:]
+		for i in range(0,len(wvec)):
+			if(i in seenwt):
+				wvec[i] = 0
 	##-- Make the prediction (Evaluate wx+b) --##
 		for i in range(0,epochs):
 			wtxSum = bias
@@ -156,7 +161,7 @@ def AggressivePerceptron( initEn, xdata, ydata, wsize, epochs, margin, enShuffle
 
 
 
-def Perceptron(lr, initEn, xdata, ydata, wsize, epochs, margin, enShuffle ):
+def Perceptron(lr, initEn, xdata, ydata, wsize, epochs, margin, enShuffle, seenwt ):
 	wvec = []
 	bias = 0
 	mistakeCounter = 0
@@ -169,6 +174,9 @@ def Perceptron(lr, initEn, xdata, ydata, wsize, epochs, margin, enShuffle ):
 		wvec = numpy.random.normal(0, 0.01, wsize+1)
 		bias = wvec[0]
 		wvec = wvec[1:]
+		for i in range(0,len(wvec)):
+			if(i in seenwt):
+				wvec[i] = 0
 	##-- Make the prediction (Evaluate wx+b) -- ##
 	for i in range(0,epochs):
 		wtxSum = bias

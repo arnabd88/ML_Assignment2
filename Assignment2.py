@@ -58,11 +58,11 @@ def Run_Q3_3_1():
 	print '*********************************************************************************'
 	print "//Question-3.3.1 Report (Sanity check using Table2 -----------------------------"
 	print '*********************************************************************************'
-	[XData, YData, FSize] = func.parseInfo(sanityTable)
+	[XData, YData, FSize, SeenWt] = func.parseInfo(sanityTable)
 	maxVecLen = max(FSize)
 	for i in range(1,2):
 		for j in LRateList:
-			[Bias, Wvec, LearningMistake] = func.Perceptron(j, 0, XData, YData, maxVecLen, i, 0, 0)
+			[Bias, Wvec, LearningMistake] = func.Perceptron(j, 0, XData, YData, maxVecLen, i, 0, 0, SeenWt)
 			mistakeCount = func.TestPerceptron(XData, YData, Wvec, Bias, maxVecLen, 0)
 			TrainAccuracy = (float(len(XData) - mistakeCount)/len(XData))*100
 			print 'Using Learning Rate = ',j,' number of epochs = ',i, 'Initialization = @ default 0 , No-Shuffle'
@@ -78,12 +78,12 @@ def Run_Q3_3_2_sp():
 	print '*********************************************************************************'
 	print "//Question-3.3.2 (Simple Perceptron-single pass) Report on Adult Data -----------------------------"
 	print '*********************************************************************************'
-	[XData, YData, FSize] = func.parseInfo(trainFileHandle)
+	[XData, YData, FSize, SeenWt] = func.parseInfo(trainFileHandle)
 	maxVecLen = max(FSize)
 	margin = 0
 	for i in range(1,2):
 		for j in LRateList:
-			[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, margin, 0)
+			[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, margin, 0, SeenWt)
 			mistakeCount = func.TestPerceptron(XData, YData, Wvec, Bias, maxVecLen, margin)
 			TrainAccuracy = ((float(len(XData) - mistakeCount))/len(XData))*100
 			print 'Using Learning Rate = ',j,' number of epochs = Sinlge Pass,  Initialization = random with mean 0 and sd 0.1'
@@ -105,12 +105,12 @@ def Run_Q3_3_2_mp():
 	print '*********************************************************************************'
 	print "//Question-3.3.2 (Margin Perceptron-single pass) Report on Adult Data -----------------------------"
 	print '*********************************************************************************'
-	[XData, YData, FSize] = func.parseInfo(trainFileHandle)
+	[XData, YData, FSize, SeenWt] = func.parseInfo(trainFileHandle)
 	maxVecLen = max(FSize)
 	for i in range(1,2):
 		for j in LRateList:
 			for k in MarginList:
-				[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, k, 0)
+				[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, k, 0, SeenWt)
 				mistakeCount = func.TestPerceptron(XData, YData, Wvec, Bias, maxVecLen, k)
 				TrainAccuracy = ((float(len(XData) - mistakeCount))/len(XData))*100
 				print 'Using Learning Rate = ',j,', number of epochs = Single Pass,  Margin = ', k,  ', Initialization = random with mean 0 and sd 0.1'
@@ -132,12 +132,12 @@ def Run_Q3_3_3_sp_batch_noShuffle():
 	print '***************************************************************************************************'
 	print "//Question-3.3.2 (Simple Perceptron-batch 3,4,5) No Shuffle Report on Adult Data -----------------------------"
 	print '***************************************************************************************************'
-	[XData, YData, FSize] = func.parseInfo(trainFileHandle)
+	[XData, YData, FSize, SeenWt] = func.parseInfo(trainFileHandle)
 	maxVecLen = max(FSize)
 	margin = 0
 	for i in range(3,6):
 		for j in LRateList:
-			[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, margin, 0)
+			[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, margin, 0, SeenWt)
 			mistakeCount = func.TestPerceptron(XData, YData, Wvec, Bias, maxVecLen, margin)
 			TrainAccuracy = ((float(len(XData) - mistakeCount))/len(XData))*100
 			print 'Using Learning Rate = ',j,' number of epochs = ',i,'  Initialization = random with mean 0 and sd 0.1'
@@ -160,12 +160,12 @@ def Run_Q3_3_3_mp_batch_noShuffle():
 	print '***************************************************************************************************'
 	print "//Question-3.3.2 (Margin Perceptron-batch 3,4,5) No Shuffle Report on Adult Data -----------------------------"
 	print '***************************************************************************************************'
-	[XData, YData, FSize] = func.parseInfo(trainFileHandle)
+	[XData, YData, FSize, SeenWt] = func.parseInfo(trainFileHandle)
 	maxVecLen = max(FSize)
 	for i in range(3,6):
 		for j in LRateList:
 			for k in MarginList:
-				[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, k, 0)
+				[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, k, 0, SeenWt)
 				mistakeCount = func.TestPerceptron(XData, YData, Wvec, Bias, maxVecLen, k)
 				TrainAccuracy = ((float(len(XData) - mistakeCount))/len(XData))*100
 				print 'Using Learning Rate = ',j,', number of epochs = ',i,'  Margin = ', k,  ', Initialization = random with mean 0 and sd 0.1'
@@ -189,12 +189,12 @@ def Run_Q3_3_3_sp_batch_Shuffle():
 	print '***************************************************************************************************'
 	print "//Question-3.3.2 (Simple Perceptron-batch 3,4,5) With Shuffle Report on Adult Data -----------------------------"
 	print '***************************************************************************************************'
-	[XData, YData, FSize] = func.parseInfo(trainFileHandle)
+	[XData, YData, FSize, SeenWt] = func.parseInfo(trainFileHandle)
 	maxVecLen = max(FSize)
 	margin = 0
 	for i in range(3,6):
 		for j in LRateList:
-			[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, margin, 1)
+			[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, margin, 1, SeenWt)
 			mistakeCount = func.TestPerceptron(XData, YData, Wvec, Bias, maxVecLen, margin)
 			TrainAccuracy = ((float(len(XData) - mistakeCount))/len(XData))*100
 			print 'Using Learning Rate = ',j,' number of epochs = ',i,'  Initialization = random with mean 0 and sd 0.1, With Shuffle'
@@ -217,12 +217,12 @@ def Run_Q3_3_3_mp_batch_Shuffle():
 	print '***************************************************************************************************'
 	print "//Question-3.3.2 (Margin Perceptron-batch 3,4,5) With Shuffle Report on Adult Data -----------------------------"
 	print '***************************************************************************************************'
-	[XData, YData, FSize] = func.parseInfo(trainFileHandle)
+	[XData, YData, FSize, SeenWt] = func.parseInfo(trainFileHandle)
 	maxVecLen = max(FSize)
 	for i in range(3,6):
 		for j in LRateList:
 			for k in MarginList:
-				[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, k, 0)
+				[Bias, Wvec, LearningMistake] = func.Perceptron(j, 1, XData, YData, maxVecLen, i, k, 0, SeenWt)
 				mistakeCount = func.TestPerceptron(XData, YData, Wvec, Bias, maxVecLen, k)
 				TrainAccuracy = ((float(len(XData) - mistakeCount))/len(XData))*100
 				print 'Using Learning Rate = ',j,', number of epochs = ',i,'  Margin = ', k,  ', Initialization = random with mean 0 and sd 0.1, with shuffle'
@@ -248,11 +248,11 @@ def Run_Q3_grad_with_noShuffle():
 	print '*********************************************************************************'
 	print "//Question-3: For Grads (Aggressive Perceptron-batch 3,4,5) With No Shuffle Report on Adult Data Set -------------"
 	print '*********************************************************************************'
-	[XData, YData, FSize] = func.parseInfo(trainFileHandle)
+	[XData, YData, FSize, SeenWt] = func.parseInfo(trainFileHandle)
 	maxVecLen = max(FSize)
 	for i in range(3,6):
 		for k in MarginList:
-			[Bias, Wvec, LearningMistake] = func.AggressivePerceptron(1, XData, YData, maxVecLen, i, k, 0)
+			[Bias, Wvec, LearningMistake] = func.AggressivePerceptron(1, XData, YData, maxVecLen, i, k, 0, SeenWt)
 			mistakeCount = func.TestMarginPerceptron(XData, YData, Wvec, Bias, maxVecLen, k)
 			TrainAccuracy = ((float(len(XData) - mistakeCount))/len(XData))*100
 			print 'Using Dynamic Learning rate, number of epochs = ',i,', Margin = ', k,  ', Initialization = random with mean 0 and sd 0.1, no Shuffle'
@@ -275,11 +275,11 @@ def Run_Q3_grad_with_Shuffle():
 	print '*********************************************************************************'
 	print "//Question-3: For Grads (Aggressive Perceptron-batch 3,4,5) With Shuffle Report on Adult Data Set -------------"
 	print '*********************************************************************************'
-	[XData, YData, FSize] = func.parseInfo(trainFileHandle)
+	[XData, YData, FSize, SeenWt] = func.parseInfo(trainFileHandle)
 	maxVecLen = max(FSize)
 	for i in range(3,6):
 		for k in MarginList:
-			[Bias, Wvec, LearningMistake] = func.AggressivePerceptron(1, XData, YData, maxVecLen, i, k, 1)
+			[Bias, Wvec, LearningMistake] = func.AggressivePerceptron(1, XData, YData, maxVecLen, i, k, 1, SeenWt)
 			mistakeCount = func.TestMarginPerceptron(XData, YData, Wvec, Bias, maxVecLen, k)
 			TrainAccuracy = ((float(len(XData) - mistakeCount))/len(XData))*100
 			print 'Using Dynamic Learning rate, number of epochs = ',i,', Margin = ', k,  ', Initialization = random with mean 0 and sd 0.1, with Shuffle'
